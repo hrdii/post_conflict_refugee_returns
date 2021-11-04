@@ -1,0 +1,45 @@
+- `case:` `country`, `year0`
+- `year0:` Year denoting end of conflict.
+- `country:` Refugee source country.
+- `deaths_state:` Death count in `year0` in `country`; `type_of_violence: state`
+- `event_count_state:` Violent event count in `year0` in `country`; `type_of_violence: state`   
+- `deaths_onesided:` Death count in `year0` in `country`; `type_of_violence: onesided`      
+- `event_count_onesided:` Violent event count in `year0` in `country`; `type_of_violence: onesided`
+- `deaths_nonstate:` Death count in `year0` in `country`; `type_of_violence: nonstate`      
+- `event_count_nonstate:` Violent event count in `year0` in `country`; `type_of_violence: nonstate`  
+- `deaths_total:` Death count in `year0` in `country`; all types of violence
+- `event_count_total:` Violent event count in `year0` in `country`; all types of violence
+- `start_year:` Start of conflict.
+- `year{i}:` `i` years after the end of conflict; 1 <= `i` <= 10.
+- `ref_year0:` Refugee stock at the end of conflict.
+- `ref_year{i}:` Refugee stock in `i`th year after the end of conflict; 1 <= `i` <= 10.
+- `rr_year0:` Refugee Returned at the end of conflict.
+- `rr_year{i}:` Refugees Returned in `i`th year after the end of conflict; 1 <= `i` <= 10.            
+- `nref_year{i}:` Additional refugees displaced in `i`th year after the end of conflict; 1 <= `i` <= 10. `nref_year{i} = ref_year{i} - ref_year{i-1} + rr_year{i}` 
+- `cref_year{i}:` Total refugees displaced `i` years after the end of conflict; 1 <= `i` <= 10. `cref_year{i} = ref_year0 + nref_year{1:i}+`             
+- `c1_10_rr_year{i}:` Total refugees returned `i` years after the end of conflict; 1 <= `i` <= 10. `crr_year{i} = nref_year{1:i}+`
+- `c0_10_rr_year{i}:` Total refugees returned `i` years after the end of conflict; 1 <= `i` <= 10. `crr_year{i} = nref_year{0:i}+`
+- `pc1_10_rr_year{i}:` Total refugees returned as a proportion of total refugees displaced `i` years after the end of conflict; 1 <= `i` <= 10. `pc1_10_rr_year{i} = c1_10_rr_year{i} / cref_year{i}`
+- `pc0_10_rr_year{i}:` Total refugees returned as a proportion of total refugees displaced `i` years after the end of conflict; 1 <= `i` <= 10. `pc0_10_rr_year{i} = c0_10_rr_year{i} / cref_year{i}`
+- `cas25_year:` Number of years with more than 25 battle-related deaths in the source country in the 10 years following the end of conflict.
+- `cas500_year:` Number of years with more than 500 battle-related deaths in the source country in the 10 years following the end of conflict.
+- `cas1k_year:` Number of years with more than 1000 battle-related deaths in the source country in the 10 years following the end of conflict.
+- `length_war:` `start_year - year0`
+- `avg_gnipercap:` GNI Per Capita of Source Country averaged over years following the end of conflict (up to 10) for which GNI data is available.
+- `avg_annual_gni_change:` Change in GNI Per Capita of Source Country averaged over years following the end of conflict (up to 10) for which GNI data is available.
+- `pneighbor:` Proportion of refugees at the end of conflict that are in host countries that share a land border with source country.
+- `pinc_low:` Proportion of refugees at the end of conflict that are in host countries that are classified as low income by World Bank. 
+- `pinc_middle:` Proportion of refugees at the end of conflict that are in host countries that are classified as lower-middle or upper-middle income by World Bank. 
+- `pinc_high:` Proportion of refugees at the end of conflict that are in host countries that are classified as high income by World Bank. 
+- `phighref:` Proportion of refugees at the end of conflict that are in host countries that have >=10,000 refugees in the year the conflict ends.  
+- `phighcasyr0:` Proportion of refugees at the end of conflict that are in host countries that have >=1000 battle-related deaths in the year the conflict ends.  
+- `psomecasyr010:` Proportion of refugees at the end of conflict that are in host countries that have at least 5 years of more than 25 battle-related deaths in the 10 years the following the end of conflict.  
+- `pinformal_33:` Proportion of refugees at the end of conflict that are in host countries whose average proportion of informal economy is greater the 33%.
+- `pinformal_50:` Proportion of refugees at the end of conflict that are in host countries whose average proportion of informal economy is greater the 50%.
+- `punemp_5:` Proportion of refugees at the end of conflict that are in host countries that have more than 5% unemployment rate.
+- `punemp_10:` Proportion of refugees at the end of conflict that are in host countries that have more than 10% unemployment rate.
+- `punemp_15:` Proportion of refugees at the end of conflict that are in host countries that have more than 15% unemployment rate.
+- `pedspend_4:` Proportion of refugees at the end of conflict that are in host countries whose government spending on education as a percentage of GDP is less than 4% 
+- `pedspend_3:` Proportion of refugees at the end of conflict that are in host countries whose government spending on education as a percentage of GDP is less than 3%
+- `pedspend_2:` Proportion of refugees at the end of conflict that are in host countries whose government spending on education as a percentage of GDP is less than 2%  
+- `PC1` & `PC2`: Principal components added from PCA

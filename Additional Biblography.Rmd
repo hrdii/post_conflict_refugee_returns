@@ -1,0 +1,19 @@
+---
+title: "Additional Biblography"
+output: github_document
+bibliography: packages.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE)
+```
+
+
+---
+nocite: |
+  @R-base, @R-broom, @R-corrplot, @R-cowplot, @R-data.table, @R-ggplot2, @R-readxl, @R-knitr, @R-rmarkdown, @R-scales, @R-sf, @R-sp, @R-spData, @R-spdep, @R-stringr, @R-tmap
+---
+## R Packages References
