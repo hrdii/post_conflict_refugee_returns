@@ -1,6 +1,6 @@
 # Post Conflict Refugee Returns 
 
-Analyses the conditions under which refugees have returned to their home countries after the conflict has ended. 
+Analyses the conditions under which refugees have returned to their home countries after the conflict has ended. Part of a larger project published here https://www.rand.org/pubs/research_reports/RRA1327-1.html
 
  - **Script:** `00a Custom Functions.R`
  - **Script:** `00b Historical Income Classification Thresholds.R`  
